@@ -1,49 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Ravi Seth 2018</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<body>
-
-<div class="jumbotron text-center">
-  <h1>Textris</h1>
-  <img src="design2.png" alt="Workplace" usemap="#workmap" width="25%" height="25%">
-</div>
-  
-<div class="container">
-  <div class="row">
-    <div class="col-sm-4">
-      <img src="design2.png" alt="Workplace" usemap="#workmap" width="20%" height="20%">
-      <h3>Textris</h3>
-      <p>Letters drop second by second, swipe and make words as fast as you can!  Compete in three Game Center leaderboards, easy-medium-hard.  BE THE BEST.</p>
-    </div>
-    <div class="col-sm-4">
-      <img src="count up _logo1.png" alt="Workplace" usemap="#workmap" width="20%" height="20%">
-      <h3>Count Up!</h3>
-      <p>Counting up with a twist.  Find the next number quickly.</p>
-    </div>
-    <div class="col-sm-4">
-      <h3>App #3</h3>
-      <p>Stay tuned!</p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Contact</h3>        
-      <a href="mailto:masterillusion33@gmail.com?Subject=Hello" target="_top">Email<a>
-	      <p style="color:Black;">&copy 2018 Ravi Seth</p>
-    </div>
+---
+layout: main
+---
+{% for post in paginator.posts %}
+<article class="post">
+  {% if post.img %}
+    <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : post.img}})" href="{{post.url | prepend: site.baseurl}}"></a>
+  {% else %}
+  {% endif %}
+  <div class="post-content">
+    <h2 class="post-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
+    <p>{{ post.content | strip_html | truncatewords: 15 }}</p>
+    <span class="post-date">{{post.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;—&nbsp;</span>
+    <span class="post-words">{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 250 | divided_by: 250 | append: " minute read" }}{% endunless %}</span>
   </div>
-</div>
+</article>
+{% endfor %}
 
-</body>
-</html>
-
-<style>
-img{
-	border-radius: 50%;
-}
-</style>
+{% include pagination.html %}
