@@ -18,4 +18,8 @@
 <url>
 <loc>http://localhost:4000/tags/</loc>
 </url>
+<url>
+<loc>http://localhost:4000/assets/files/Resume.pdf</loc>
+<lastmod>2019-08-25T18:39:20-04:00</lastmod>
+</url>
 </urlset>
