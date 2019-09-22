@@ -23,6 +23,11 @@ html {
 body {
   margin: 0;
 }
+.resume {
+  text-decoration: none;
+  padding: 2px 6px 2px 6px;
+  border: 1px solid #333333;
+}
 
 /**
  * Add the correct display in IE 9-.
