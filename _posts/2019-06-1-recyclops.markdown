@@ -7,7 +7,12 @@ img: recyclops.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: []
 ---
-Stuff about recyclops
+Not knowing which waste bin to put waste items in is an annoying problem for everyday people, and it results in waste getting placed in the wrong bins.  To fix this, my team developed an Android app that identifies waste items and recommends the correct bin.  
 
-## More stuff
-more stuff
+## Links
+<div class="page-footer">
+<div class="page-tag">
+<a class="tag" href="https://devpost.com/software/recyclops-8wca7d" target="_blank">Winner of Best Design</a>
+<a href="https://github.com/juliengo/Recyclops" target="_blank">Github Repo</a>
+</div>
+</div>
