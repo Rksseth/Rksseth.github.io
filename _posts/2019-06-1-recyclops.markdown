@@ -7,7 +7,14 @@ img: recyclops.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: []
 ---
+## Summary
 Not knowing which waste bin to put waste items in is an annoying problem for everyday people, and it results in waste getting placed in the wrong bins.  To fix this, my team developed an Android app that identifies waste items and recommends the correct bin.  
+
+## Languages / Frameworks / Tools Used
+<ul>
+<li>Google Cloud Platform's Vision API to do complete the picture identificaiton</li>
+<li>Java and Android to integrate Vision API and provide waste bin recomendation based on item</li>
+</ul> 
 
 ## Links
 <div class="page-footer">
