@@ -1,0 +1,15 @@
+---
+layout: post
+title: Textris
+date: 2018-04-24 09:00:20 +0300
+description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+img: textris.png # Add image post (optional)
+fig-caption: # Add figcaption (optional)
+tags: []
+devpost: 
+github: https://github.com/Rksseth/Textris
+made-with: Swift, iOS, Xcode, Apple App Store Connect
+---
+Textris combines Tetris and Scrabble into a leaderboard game with letter generation and word verification using Apple’s built in dictionary.
+
+Using the full software development cycle, Textris was designed, implemented, tested, and published to the iOS App Store
