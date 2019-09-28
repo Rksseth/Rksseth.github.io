@@ -1,25 +1,15 @@
 ---
 layout: post
-title: Recyclops
+title: Recyclops - Winner 🏆
 date: 2019-06-1 09:00:20 +0300
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
-img: recyclops.png # Add image post (optional)
+img: best-design.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: []
+devpost: https://devpost.com/software/recyclops-8wca7d
+github: https://github.com/juliengo/Recyclops
+made-with: Java, Android, Google's Cloud Vision API
 ---
-## Summary
-Not knowing which waste bin to put waste items in is an annoying problem for everyday people, and it results in waste getting placed in the wrong bins.  To fix this, my team developed an Android app that identifies waste items and recommends the correct bin.  
+Creating an environmentally friendly campus for UW students has numerous benefits on health and stress levels. In order to achieve this, students need to take an active role in keeping the campus clean. Due to a lack of knowledge, many students confuse the disposal of every day objects, putting most of the items in the garbage when they should be placed in the compost or recycle bin. Not only will this cause our landfills to grow at a higher rate, sending compost to landfills where there is no oxygen can cause methane to be released when broken down. Methane is an incredible potent and dangerous greenhouse gas. Waterloo's carbon footprint does not end on campus, but continues to the landfill through the incorrect disposal of waste by students.
 
-## Languages / Frameworks / Tools Used
-<ul>
-<li>Google Cloud Platform's Vision API to do complete the picture identificaiton</li>
-<li>Java and Android to integrate Vision API and provide waste bin recomendation based on item</li>
-</ul> 
-
-## Links
-<div class="page-footer">
-<div class="page-tag">
-<a class="tag" href="https://devpost.com/software/recyclops-8wca7d" target="_blank">Winner of Best Design</a>
-<a href="https://github.com/juliengo/Recyclops" target="_blank">Github Repo</a>
-</div>
-</div>
+The app captures a photo of an item to be thrown out and uses Google's Cloud Vision API to identify the object. Recyclops then classifies and informs the user of where the item should be placed.
