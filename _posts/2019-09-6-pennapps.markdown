@@ -4,6 +4,7 @@ title: Red Eye
 date: 2019-09-6 09:00:20 +0300
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
 img: redeye-withme.png # Add image post (optional)
+type: side-projects
 fig-caption: # Add figcaption (optional)
 tags: []
 made-with: Java, Android, Google's Cloud Vision API, and Google Translate API

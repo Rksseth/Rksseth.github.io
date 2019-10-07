@@ -4,6 +4,7 @@ title: Recyclops - Winner 🏆
 date: 2019-06-1 09:00:20 +0300
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
 img: best-design.jpg # Add image post (optional)
+type: side-projects
 fig-caption: # Add figcaption (optional)
 tags: []
 devpost: https://devpost.com/software/recyclops-8wca7d

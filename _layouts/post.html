@@ -21,14 +21,19 @@ layout: main
       </header>
       <div class="post-content">
         {{content | markdownify}}
+
+        {% if page.made-with %}
         Made with ❤️ and: {{ page.made-with }}
+        {% endif %}
       </div>
       <div class="page-footer">
           <div class="page-tag">
             {% if page.devpost %}
               <a href="{{page.devpost}}" class="tag" target="_blank">Devpost</a>
             {% endif %}
+            {% if page.github %}
             <a href="{{page.github}}" class="tag" target="_blank">Github</a>
+            {% endif %}
           </div>
         </div>
     </div> <!-- End Wrap Content -->
