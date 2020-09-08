@@ -36,6 +36,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/content-popup/content-popup.component.html":
+/*!*************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/content-popup/content-popup.component.html ***!
+  \*************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<mat-toolbar>\n    <mat-toolbar-row>\n        <h1 mat-dialog-title>{{ project.title }}</h1>\n\n        <button mat-icon-button (click)=\"onNoClick()\">\n            <mat-icon>close</mat-icon>\n        </button>\n    </mat-toolbar-row>\n    <mat-toolbar-row class=\"details\">\n        <p>{{ project.subtitle }}</p>\n        <i>{{ project.date }}</i>\n    </mat-toolbar-row>\n</mat-toolbar>\n\n<mat-divider></mat-divider>\n<div class=\"content\">\n    <p style=\"margin-bottom: 2rem;white-space:pre-wrap;\" [innerHTML]=\"project.story\"></p>\n    \n    <div class=\"image-container\">\n        <img [src]=\"project.picture\">\n    </div>\n\n</div>");
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/home-page/home-page.component.html":
 /*!*****************************************************************************************************!*\
   !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/home-page/home-page.component.html ***!
@@ -45,7 +58,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"header\">\n    Projects\n    <mat-divider></mat-divider>\n</div>\n<div class=\"outer\">\n\n    <mat-card *ngFor=\"let project of sideProjects\" matRipple class=\"item\">\n        <mat-card-title>{{ project.title }}</mat-card-title>\n        \n        <div class=\"subtitle\">\n            <mat-card-subtitle>{{ project.subtitle }}</mat-card-subtitle>\n            <i>\n                <mat-card-subtitle>{{ project.date }}</mat-card-subtitle>\n            </i>\n        </div>\n\n        <img mat-card-image [src]=\"project.picture\">\n\n        <div class=\"story\">{{ project.story }}</div>\n\n        <div class=\"fade\"></div>\n    </mat-card>\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"header\">\n    Projects\n    <mat-divider></mat-divider>\n</div>\n<div class=\"outer\">\n\n    <mat-card *ngFor=\"let project of sideProjects\" matRipple class=\"item\" (click)=\"openDialog(project)\">\n        <mat-card-title>{{ project.title }}</mat-card-title>\n        \n        <div class=\"subtitle\">\n            <mat-card-subtitle>{{ project.subtitle }}</mat-card-subtitle>\n            <i>\n                <mat-card-subtitle>{{ project.date }}</mat-card-subtitle>\n            </i>\n        </div>\n\n        <img mat-card-image [src]=\"project.picture\">\n    </mat-card>\n</div>");
 
 /***/ }),
 
@@ -392,7 +405,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_material_divider__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/material/divider */ "./node_modules/@angular/material/esm2015/divider.js");
 /* harmony import */ var _angular_material_core__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/material/core */ "./node_modules/@angular/material/esm2015/core.js");
 /* harmony import */ var _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @angular/material/toolbar */ "./node_modules/@angular/material/esm2015/toolbar.js");
-/* harmony import */ var _components_home_page_home_page_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./components/home-page/home-page.component */ "./src/app/components/home-page/home-page.component.ts");
+/* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @angular/material/icon */ "./node_modules/@angular/material/esm2015/icon.js");
+/* harmony import */ var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @angular/material/dialog */ "./node_modules/@angular/material/esm2015/dialog.js");
+/* harmony import */ var _components_home_page_home_page_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./components/home-page/home-page.component */ "./src/app/components/home-page/home-page.component.ts");
+/* harmony import */ var _components_content_popup_content_popup_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./components/content-popup/content-popup.component */ "./src/app/components/content-popup/content-popup.component.ts");
 
 
 
@@ -415,13 +431,17 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
 let AppModule = class AppModule {
 };
 AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
         declarations: [
             _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
-            _components_home_page_home_page_component__WEBPACK_IMPORTED_MODULE_20__["HomePageComponent"]
+            _components_home_page_home_page_component__WEBPACK_IMPORTED_MODULE_22__["HomePageComponent"],
+            _components_content_popup_content_popup_component__WEBPACK_IMPORTED_MODULE_23__["ContentPopupComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -439,12 +459,73 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _angular_material_divider__WEBPACK_IMPORTED_MODULE_17__["MatDividerModule"],
             _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_5__["FontAwesomeModule"],
             _angular_material_core__WEBPACK_IMPORTED_MODULE_18__["MatRippleModule"],
-            _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_19__["MatToolbarModule"]
+            _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_19__["MatToolbarModule"],
+            _angular_material_dialog__WEBPACK_IMPORTED_MODULE_21__["MatDialogModule"],
+            _angular_material_icon__WEBPACK_IMPORTED_MODULE_20__["MatIconModule"]
         ],
         providers: [],
-        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
+        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]],
+        entryComponents: [_components_content_popup_content_popup_component__WEBPACK_IMPORTED_MODULE_23__["ContentPopupComponent"]]
     })
 ], AppModule);
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/content-popup/content-popup.component.scss":
+/*!***********************************************************************!*\
+  !*** ./src/app/components/content-popup/content-popup.component.scss ***!
+  \***********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".mat-toolbar {\n  padding: 0;\n  background-color: white;\n}\n.mat-toolbar ::ng-deep.mat-toolbar-row {\n  padding: 0;\n  margin: 0;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-pack: justify;\n          justify-content: space-between;\n}\n.content {\n  height: 324px;\n  overflow-y: auto;\n}\nimg {\n  width: 452px;\n}\n.details {\n  font-size: 12px;\n  color: grey;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9yYXZpc2V0aC9Eb3dubG9hZHMvUGVyc29uYWxXZWJzaXRlL3NyYy9hcHAvY29tcG9uZW50cy9jb250ZW50LXBvcHVwL2NvbnRlbnQtcG9wdXAuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2NvbXBvbmVudHMvY29udGVudC1wb3B1cC9jb250ZW50LXBvcHVwLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksVUFBQTtFQUNBLHVCQUFBO0FDQ0o7QURDSTtFQUNJLFVBQUE7RUFDQSxTQUFBO0VBQ0Esb0JBQUE7RUFBQSxhQUFBO0VBQ0EseUJBQUE7VUFBQSw4QkFBQTtBQ0NSO0FER0E7RUFDSSxhQUFBO0VBQ0EsZ0JBQUE7QUNBSjtBREVBO0VBQ0ksWUFBQTtBQ0NKO0FERUE7RUFDSSxlQUFBO0VBQ0EsV0FBQTtBQ0NKIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9jb250ZW50LXBvcHVwL2NvbnRlbnQtcG9wdXAuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubWF0LXRvb2xiYXIge1xuICAgIHBhZGRpbmc6IDA7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgXG4gICAgOjpuZy1kZWVwLm1hdC10b29sYmFyLXJvdyB7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIH1cbn1cblxuLmNvbnRlbnQge1xuICAgIGhlaWdodDogMzI0cHg7XG4gICAgb3ZlcmZsb3cteTogYXV0bztcbn1cbmltZyB7XG4gICAgd2lkdGg6IDQ1MnB4O1xufVxuXG4uZGV0YWlscyB7XG4gICAgZm9udC1zaXplOiAxMnB4O1xuICAgIGNvbG9yOiBncmV5O1xufVxuXG4iLCIubWF0LXRvb2xiYXIge1xuICBwYWRkaW5nOiAwO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbn1cbi5tYXQtdG9vbGJhciA6Om5nLWRlZXAubWF0LXRvb2xiYXItcm93IHtcbiAgcGFkZGluZzogMDtcbiAgbWFyZ2luOiAwO1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG59XG5cbi5jb250ZW50IHtcbiAgaGVpZ2h0OiAzMjRweDtcbiAgb3ZlcmZsb3cteTogYXV0bztcbn1cblxuaW1nIHtcbiAgd2lkdGg6IDQ1MnB4O1xufVxuXG4uZGV0YWlscyB7XG4gIGZvbnQtc2l6ZTogMTJweDtcbiAgY29sb3I6IGdyZXk7XG59Il19 */");
+
+/***/ }),
+
+/***/ "./src/app/components/content-popup/content-popup.component.ts":
+/*!*********************************************************************!*\
+  !*** ./src/app/components/content-popup/content-popup.component.ts ***!
+  \*********************************************************************/
+/*! exports provided: ContentPopupComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContentPopupComponent", function() { return ContentPopupComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
+
+
+
+let ContentPopupComponent = class ContentPopupComponent {
+    constructor(dialogRef, data) {
+        this.dialogRef = dialogRef;
+        this.data = data;
+        this.project = data;
+    }
+    ngOnInit() {
+    }
+    onNoClick() {
+        this.dialogRef.close();
+    }
+};
+ContentPopupComponent.ctorParameters = () => [
+    { type: _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialogRef"] },
+    { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MAT_DIALOG_DATA"],] }] }
+];
+ContentPopupComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'content-popup',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./content-popup.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/content-popup/content-popup.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./content-popup.component.scss */ "./src/app/components/content-popup/content-popup.component.scss")).default]
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](1, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_2__["MAT_DIALOG_DATA"]))
+], ContentPopupComponent);
 
 
 
@@ -475,6 +556,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomePageComponent", function() { return HomePageComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material/dialog */ "./node_modules/@angular/material/esm2015/dialog.js");
+/* harmony import */ var _content_popup_content_popup_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../content-popup/content-popup.component */ "./src/app/components/content-popup/content-popup.component.ts");
+
+
 
 
 class Project {
@@ -487,72 +572,28 @@ class Project {
     }
 }
 let HomePageComponent = class HomePageComponent {
-    constructor() {
-        this.signIt = `
-  We wanted to empower people through the ability of speech 
-  by creating an app that translates sign language to English. 
-  Sign it translates sign language to English in real time using 
-  machine learning and Open CV to track hand movement and identify 
-  different signed words and letters.
+    constructor(dialog) {
+        this.dialog = dialog;
+        this.signIt = `We wanted to empower people through the ability of speech by creating an app that translates sign language to English.  Sign it translates sign language to English in real time using machine learning and Open CV to track hand movement and identify different signed words and letters.
   
-  <br><br>
-  We used Open CV to track the hand movement and machine learning 
-  in order to identify the different signs used for different letters. 
-  After identifying the signed letter, we stored the signed letters 
-  to form full sentences. Using Azure, we trained the data set to 
-  work on various hands and environments.
-  `;
-        this.redeye = `
-  Life travels fast, and car crashes can happen in the blink 
-  of an eye, but with our companion, Red Eye, we can prevent this. 
-  Long and tedious drives can increase the risk of falling asleep 
-  at the wheel and medical emergencies don’t wait until you’re out 
-  of the car. This Android app is designed to create a more positive, 
-  seamless driving experience by helping drivers when they are tired 
-  or in the event that they have a medical emergency while behind the
-   wheel.
+We used Open CV to track the hand movement and machine learning in order to identify the different signs used for different letters.  After identifying the signed letter, we stored the signed letters to form full sentences. Using Azure, we trained the data set to work on various hands and environments.
+
+Made with &hearts; and Python, OpenCV, TensorFlow, Azure Custom Vision Service`;
+        this.redeye = `Life travels fast, and car crashes can happen in the blink of an eye, but with our companion, Red Eye, we can prevent this.  Long and tedious drives can increase the risk of falling asleep at the wheel and medical emergencies don’t wait until you’re out of the car. This Android app is designed to create a more positive, seamless driving experience by helping drivers when they are tired or in the event that they have a medical emergency while behind the wheel.
    
-   <br><br>
-   The app uses face detection to track and analyze the driver’s 
-   face, identifying if they have fallen asleep or have experienced 
-   a medical emergency through their eyes (whether they are opened 
-    or closed). The app then suggests a course of action: find the 
-    nearest hotel or alert the authorities. If the former is chosen, 
-    a list of nearby hotels will appear on screen, if the latter is 
-    chosen, the authorities will be alerted and given the exact 
-    coordinates by accessing the phone’s location.
-  `;
-        this.recyclops = `
-  Creating an environmentally friendly campus for UW students 
-  has numerous benefits on health and stress levels. In order 
-  to achieve this, students need to take an active role in keeping
-   the campus clean. Due to a lack of knowledge, many students 
-   confuse the disposal of every day objects, putting most of the
-    items in the garbage when they should be placed in the compost 
-    or recycle bin. Not only will this cause our landfills to grow 
-    at a higher rate, sending compost to landfills where there is 
-    no oxygen can cause methane to be released when broken down. 
-    Methane is an incredible potent and dangerous greenhouse gas. 
-    Waterloo’s carbon footprint does not end on campus, but continues
-     to the landfill through the incorrect disposal of waste by 
-    students.
-    
-    <br><br>
-    The app captures a photo of an item to be thrown out and 
-    uses Google’s Cloud Vision API to identify the object. Recyclops 
-    then classifies and informs the user of where the item should be 
-    placed.
-  `;
-        this.textris = `
-  Textris combines Tetris and Scrabble into a leaderboard game 
-  with letter generation and word verification using Apple’s built 
-  in dictionary.
+The app uses face detection to track and analyze the driver’s face, identifying if they have fallen asleep or have experienced a medical emergency through their eyes (whether they are opened or closed). The app then suggests a course of action: find the nearest hotel or alert the authorities. If the former is chosen, a list of nearby hotels will appear on screen, if the latter is chosen, the authorities will be alerted and given the exact coordinates by accessing the phone’s location.
+
+Made with &hearts; and Java, Android, Google's Cloud Vision API, and Google Translate API`;
+        this.recyclops = `Creating an environmentally friendly campus for UW students has numerous benefits on health and stress levels. In order to achieve this, students need to take an active role in keeping the campus clean. Due to a lack of knowledge, many students confuse the disposal of every day objects, putting most of the items in the garbage when they should be placed in the compost or recycle bin. Not only will this cause our landfills to grow at a higher rate, sending compost to landfills where there is no oxygen can cause methane to be released when broken down. Methane is an incredible potent and dangerous greenhouse gas. Waterloo’s carbon footprint does not end on campus, but continues to the landfill through the incorrect disposal of waste by students.    
+
+The app captures a photo of an item to be thrown out and uses Google’s Cloud Vision API to identify the object. Recyclops then classifies and informs the user of where the item should be placed.
+
+Made with &hearts; and Java, Android, Google's Cloud Vision API`;
+        this.textris = `Textris combines Tetris and Scrabble into a leaderboard game with letter generation and word verification using Apple’s built in dictionary.
   
-  <br><br>
-  Using the full software development cycle, Textris was designed, 
-  implemented, tested, and published to the iOS App Store with over 50
-  users!
-  `;
+Using the full software development cycle, Textris was designed, implemented, tested, and published to the iOS App Store with over 50 users!
+
+Made with &hearts; and Swift, iOS, Xcode, Apple App Store Connect`;
         this.sideProjects = [
             new Project("Sign It", "Hack the North", "Sept. 13 2019", "../../assets/sideProjects/signit.png", this.signIt),
             new Project("Red Eye", "PennApps Hackathon", "Sept. 6 2019", "../../assets/sideProjects/redeye-withme.png", this.redeye),
@@ -562,7 +603,21 @@ let HomePageComponent = class HomePageComponent {
     }
     ngOnInit() {
     }
+    openDialog(project) {
+        const dialogRef = this.dialog.open(_content_popup_content_popup_component__WEBPACK_IMPORTED_MODULE_3__["ContentPopupComponent"], {
+            width: '500px',
+            height: '500px',
+            data: project,
+            panelClass: 'custom-dialog-container'
+        });
+        dialogRef.afterClosed().subscribe(res => {
+            console.log(res);
+        });
+    }
 };
+HomePageComponent.ctorParameters = () => [
+    { type: _angular_material_dialog__WEBPACK_IMPORTED_MODULE_2__["MatDialog"] }
+];
 HomePageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-home-page',
