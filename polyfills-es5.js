@@ -20299,9 +20299,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /***************************************************************************************************
      * APPLICATION IMPORTS
      */
+    // Fixes an error related with jsnetowrkx
 
+
+    window.global = window;
     /***/
-
   },
 
   /***/

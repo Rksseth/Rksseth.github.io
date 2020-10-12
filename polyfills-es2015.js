@@ -6359,6 +6359,8 @@ __webpack_require__.r(__webpack_exports__);
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */
+// Fixes an error related with jsnetowrkx
+window.global = window;
 
 
 /***/ }),

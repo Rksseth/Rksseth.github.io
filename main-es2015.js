@@ -36,6 +36,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/concept-map-page/concept-map-page.component.html":
+/*!*******************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/concept-map-page/concept-map-page.component.html ***!
+  \*******************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"outer\">\n    <mat-toolbar class=\"mat-elevation-z8\">\n        <mat-form-field>\n            <input matInput autocomplete=\"off\" placeholder=\"Search\" [(ngModel)]=\"search\" [disabled]=\"loading\">\n        </mat-form-field>\n        <button mat-mini-fab (click)=\"completeSearch()\" [disabled]=\"loading\">\n            <mat-spinner *ngIf=\"loading; else notLoading\" [diameter]=\"25\"></mat-spinner>\n            \n            <ng-template #notLoading>\n                <mat-icon matPrefix>search</mat-icon>\n            </ng-template>\n        </button>\n        <div class=\"form-options\">\n            <h2>Links link back to search</h2>\n            <mat-checkbox labelPosition=\"before\" [disabled]=\"loading\" [(ngModel)]=\"linksLinkBack\"></mat-checkbox>\n        </div>\n        <div class=\"form-options\">\n            <h2>Minimum Percent Match</h2>\n            <mat-slider\n                [disabled]=\"loading\"\n                max=\"0.5\"\n                min=\"0\"\n                step=\"0.1\"\n                [thumbLabel]=\"true\"\n                [(ngModel)]=\"minPercentMatch\">\n            </mat-slider>\n        </div>\n    </mat-toolbar>\n    <div id=\"canvas\" class=\"mat-elevation-z8\">\n\n    </div>\n</div>");
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/content-popup/content-popup.component.html":
 /*!*************************************************************************************************************!*\
   !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/content-popup/content-popup.component.html ***!
@@ -392,17 +405,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 /* harmony import */ var _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @fortawesome/angular-fontawesome */ "./node_modules/@fortawesome/angular-fontawesome/fesm2015/angular-fontawesome.js");
 /* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm2015/animations.js");
-/* harmony import */ var _angular_material_slider__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/material/slider */ "./node_modules/@angular/material/esm2015/slider.js");
-/* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/material/card */ "./node_modules/@angular/material/esm2015/card.js");
-/* harmony import */ var _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/material/sidenav */ "./node_modules/@angular/material/esm2015/sidenav.js");
-/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/material/button */ "./node_modules/@angular/material/esm2015/button.js");
-/* harmony import */ var _angular_material_divider__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/material/divider */ "./node_modules/@angular/material/esm2015/divider.js");
-/* harmony import */ var _angular_material_core__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/material/core */ "./node_modules/@angular/material/esm2015/core.js");
-/* harmony import */ var _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/material/toolbar */ "./node_modules/@angular/material/esm2015/toolbar.js");
-/* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/material/icon */ "./node_modules/@angular/material/esm2015/icon.js");
-/* harmony import */ var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/material/dialog */ "./node_modules/@angular/material/esm2015/dialog.js");
-/* harmony import */ var _components_home_page_home_page_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/home-page/home-page.component */ "./src/app/components/home-page/home-page.component.ts");
-/* harmony import */ var _components_content_popup_content_popup_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/content-popup/content-popup.component */ "./src/app/components/content-popup/content-popup.component.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var _angular_material_slider__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/material/slider */ "./node_modules/@angular/material/esm2015/slider.js");
+/* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/material/card */ "./node_modules/@angular/material/esm2015/card.js");
+/* harmony import */ var _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/material/sidenav */ "./node_modules/@angular/material/esm2015/sidenav.js");
+/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/material/button */ "./node_modules/@angular/material/esm2015/button.js");
+/* harmony import */ var _angular_material_divider__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/material/divider */ "./node_modules/@angular/material/esm2015/divider.js");
+/* harmony import */ var _angular_material_core__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/material/core */ "./node_modules/@angular/material/esm2015/core.js");
+/* harmony import */ var _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/material/toolbar */ "./node_modules/@angular/material/esm2015/toolbar.js");
+/* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/material/icon */ "./node_modules/@angular/material/esm2015/icon.js");
+/* harmony import */ var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/material/dialog */ "./node_modules/@angular/material/esm2015/dialog.js");
+/* harmony import */ var _angular_material_form_field__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/material/form-field */ "./node_modules/@angular/material/esm2015/form-field.js");
+/* harmony import */ var _angular_material_input__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/material/input */ "./node_modules/@angular/material/esm2015/input.js");
+/* harmony import */ var _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @angular/material/progress-spinner */ "./node_modules/@angular/material/esm2015/progress-spinner.js");
+/* harmony import */ var _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @angular/material/checkbox */ "./node_modules/@angular/material/esm2015/checkbox.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _components_home_page_home_page_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./components/home-page/home-page.component */ "./src/app/components/home-page/home-page.component.ts");
+/* harmony import */ var _components_content_popup_content_popup_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./components/content-popup/content-popup.component */ "./src/app/components/content-popup/content-popup.component.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _components_concept_map_page_concept_map_page_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./components/concept-map-page/concept-map-page.component */ "./src/app/components/concept-map-page/concept-map-page.component.ts");
+/* harmony import */ var _services_http_http_service__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./services/http/http.service */ "./src/app/services/http/http.service.ts");
+
 
 
 
@@ -422,35 +445,178 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+
+
+
+
+
+const appRoutes = [
+    {
+        path: '',
+        component: _components_home_page_home_page_component__WEBPACK_IMPORTED_MODULE_22__["HomePageComponent"]
+    },
+    {
+        path: 'mind-map',
+        component: _components_concept_map_page_concept_map_page_component__WEBPACK_IMPORTED_MODULE_25__["ConceptMapPageComponent"]
+    }
+];
 let AppModule = class AppModule {
 };
 AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
         declarations: [
             _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
-            _components_home_page_home_page_component__WEBPACK_IMPORTED_MODULE_16__["HomePageComponent"],
-            _components_content_popup_content_popup_component__WEBPACK_IMPORTED_MODULE_17__["ContentPopupComponent"]
+            _components_home_page_home_page_component__WEBPACK_IMPORTED_MODULE_22__["HomePageComponent"],
+            _components_content_popup_content_popup_component__WEBPACK_IMPORTED_MODULE_23__["ContentPopupComponent"],
+            _components_concept_map_page_concept_map_page_component__WEBPACK_IMPORTED_MODULE_25__["ConceptMapPageComponent"]
         ],
         imports: [
+            _angular_router__WEBPACK_IMPORTED_MODULE_24__["RouterModule"].forRoot(appRoutes),
+            _angular_common_http__WEBPACK_IMPORTED_MODULE_7__["HttpClientModule"],
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
             _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"],
             _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_6__["BrowserAnimationsModule"],
-            _angular_material_slider__WEBPACK_IMPORTED_MODULE_7__["MatSliderModule"],
-            _angular_material_card__WEBPACK_IMPORTED_MODULE_8__["MatCardModule"],
-            _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_9__["MatSidenavModule"],
-            _angular_material_button__WEBPACK_IMPORTED_MODULE_10__["MatButtonModule"],
-            _angular_material_divider__WEBPACK_IMPORTED_MODULE_11__["MatDividerModule"],
+            _angular_material_slider__WEBPACK_IMPORTED_MODULE_8__["MatSliderModule"],
+            _angular_material_card__WEBPACK_IMPORTED_MODULE_9__["MatCardModule"],
+            _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_10__["MatSidenavModule"],
+            _angular_material_button__WEBPACK_IMPORTED_MODULE_11__["MatButtonModule"],
+            _angular_material_divider__WEBPACK_IMPORTED_MODULE_12__["MatDividerModule"],
             _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_5__["FontAwesomeModule"],
-            _angular_material_core__WEBPACK_IMPORTED_MODULE_12__["MatRippleModule"],
-            _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_13__["MatToolbarModule"],
-            _angular_material_dialog__WEBPACK_IMPORTED_MODULE_15__["MatDialogModule"],
-            _angular_material_icon__WEBPACK_IMPORTED_MODULE_14__["MatIconModule"]
+            _angular_material_core__WEBPACK_IMPORTED_MODULE_13__["MatRippleModule"],
+            _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_14__["MatToolbarModule"],
+            _angular_material_dialog__WEBPACK_IMPORTED_MODULE_16__["MatDialogModule"],
+            _angular_material_input__WEBPACK_IMPORTED_MODULE_18__["MatInputModule"],
+            _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_20__["MatCheckboxModule"],
+            _angular_material_form_field__WEBPACK_IMPORTED_MODULE_17__["MatFormFieldModule"],
+            _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_19__["MatProgressSpinnerModule"],
+            _angular_material_icon__WEBPACK_IMPORTED_MODULE_15__["MatIconModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_21__["FormsModule"]
         ],
-        providers: [],
+        providers: [_services_http_http_service__WEBPACK_IMPORTED_MODULE_26__["HttpService"]],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]],
-        entryComponents: [_components_content_popup_content_popup_component__WEBPACK_IMPORTED_MODULE_17__["ContentPopupComponent"]]
+        entryComponents: [_components_content_popup_content_popup_component__WEBPACK_IMPORTED_MODULE_23__["ContentPopupComponent"]]
     })
 ], AppModule);
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/concept-map-page/concept-map-page.component.scss":
+/*!*****************************************************************************!*\
+  !*** ./src/app/components/concept-map-page/concept-map-page.component.scss ***!
+  \*****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".outer {\n  position: relative;\n  top: 0;\n  right: 0;\n  left: 0;\n  bottom: 0;\n  overflow: hidden;\n  height: 100%;\n  padding: auto;\n  vertical-align: middle;\n}\n\n#canvas {\n  height: 500px;\n  width: 500px;\n  border-radius: 50%;\n  background-color: lightgrey;\n  overflow: hidden;\n  margin: auto;\n  margin-top: 10px;\n}\n\n.mat-toolbar {\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n  -webkit-box-pack: justify;\n          justify-content: space-between;\n  margin: 2%;\n  width: 96%;\n  display: -webkit-box;\n  display: flex;\n  flex-wrap: wrap;\n  background-color: white;\n  border-radius: 1em;\n}\n\n.form-options {\n  text-align: center;\n  margin: auto 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9yYXZpc2V0aC9EZXNrdG9wL0FuZ3VsYXJNYXRlcmlhbFBlcnNvbmFsV2Vic2l0ZS9zcmMvYXBwL2NvbXBvbmVudHMvY29uY2VwdC1tYXAtcGFnZS9jb25jZXB0LW1hcC1wYWdlLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9jb21wb25lbnRzL2NvbmNlcHQtbWFwLXBhZ2UvY29uY2VwdC1tYXAtcGFnZS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGtCQUFBO0VBQ0EsTUFBQTtFQUNBLFFBQUE7RUFDQSxPQUFBO0VBQ0EsU0FBQTtFQUNBLGdCQUFBO0VBQ0EsWUFBQTtFQUNBLGFBQUE7RUFDQSxzQkFBQTtBQ0NKOztBRENBO0VBQ0ksYUFBQTtFQUNBLFlBQUE7RUFDQSxrQkFBQTtFQUNBLDJCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxZQUFBO0VBQ0EsZ0JBQUE7QUNFSjs7QURBQTtFQUNJLDJCQUFBO0VBQUEsd0JBQUE7RUFBQSxtQkFBQTtFQUNBLHlCQUFBO1VBQUEsOEJBQUE7RUFDQSxVQUFBO0VBQ0EsVUFBQTtFQUNBLG9CQUFBO0VBQUEsYUFBQTtFQUNBLGVBQUE7RUFDQSx1QkFBQTtFQUNBLGtCQUFBO0FDR0o7O0FEREE7RUFDSSxrQkFBQTtFQUNBLGlCQUFBO0FDSUoiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL2NvbmNlcHQtbWFwLXBhZ2UvY29uY2VwdC1tYXAtcGFnZS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5vdXRlciB7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgIHRvcDogMDtcbiAgICByaWdodDogMDtcbiAgICBsZWZ0OiAwO1xuICAgIGJvdHRvbTogMDtcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuICAgIGhlaWdodDogMTAwJTtcbiAgICBwYWRkaW5nOiBhdXRvO1xuICAgIHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7XG59XG4jY2FudmFzIHtcbiAgICBoZWlnaHQ6IDUwMHB4O1xuICAgIHdpZHRoOiA1MDBweDtcbiAgICBib3JkZXItcmFkaXVzOiA1MCU7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogbGlnaHRncmV5O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG4gICAgbWFyZ2luOiBhdXRvO1xuICAgIG1hcmdpbi10b3A6IDEwcHg7XG59XG4ubWF0LXRvb2xiYXIge1xuICAgIGhlaWdodDogZml0LWNvbnRlbnQ7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIG1hcmdpbjogMiU7XG4gICAgd2lkdGg6IDk2JTtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtd3JhcDogd3JhcDtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBib3JkZXItcmFkaXVzOiAxZW07XG59XG4uZm9ybS1vcHRpb25zIHtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgbWFyZ2luOiBhdXRvIDEwcHg7XG59IiwiLm91dGVyIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICB0b3A6IDA7XG4gIHJpZ2h0OiAwO1xuICBsZWZ0OiAwO1xuICBib3R0b206IDA7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGhlaWdodDogMTAwJTtcbiAgcGFkZGluZzogYXV0bztcbiAgdmVydGljYWwtYWxpZ246IG1pZGRsZTtcbn1cblxuI2NhbnZhcyB7XG4gIGhlaWdodDogNTAwcHg7XG4gIHdpZHRoOiA1MDBweDtcbiAgYm9yZGVyLXJhZGl1czogNTAlO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiBsaWdodGdyZXk7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIG1hcmdpbjogYXV0bztcbiAgbWFyZ2luLXRvcDogMTBweDtcbn1cblxuLm1hdC10b29sYmFyIHtcbiAgaGVpZ2h0OiBmaXQtY29udGVudDtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICBtYXJnaW46IDIlO1xuICB3aWR0aDogOTYlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LXdyYXA6IHdyYXA7XG4gIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICBib3JkZXItcmFkaXVzOiAxZW07XG59XG5cbi5mb3JtLW9wdGlvbnMge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIG1hcmdpbjogYXV0byAxMHB4O1xufSJdfQ== */");
+
+/***/ }),
+
+/***/ "./src/app/components/concept-map-page/concept-map-page.component.ts":
+/*!***************************************************************************!*\
+  !*** ./src/app/components/concept-map-page/concept-map-page.component.ts ***!
+  \***************************************************************************/
+/*! exports provided: ConceptMapPageComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ConceptMapPageComponent", function() { return ConceptMapPageComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var src_app_services_http_http_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/services/http/http.service */ "./src/app/services/http/http.service.ts");
+/* harmony import */ var jsnetworkx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! jsnetworkx */ "./node_modules/jsnetworkx/node/index.js");
+/* harmony import */ var jsnetworkx__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(jsnetworkx__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+let ConceptMapPageComponent = class ConceptMapPageComponent {
+    constructor(httpService) {
+        this.httpService = httpService;
+        this.search = "web developer";
+        this.minPercentMatch = 0.1;
+        this.loading = false;
+    }
+    ngOnInit() {
+        this.completeSearch();
+    }
+    completeSearch() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            this.loading = true;
+            let titles = yield this.httpService.getWikiAPI(this.search).toPromise();
+            let newTitles = [];
+            for (let title of titles) {
+                let compareTitles = yield this.httpService.getWikiAPI(title).toPromise();
+                let comp = this.compareArrays(titles, compareTitles);
+                if (comp >= this.minPercentMatch) {
+                    if (this.linksLinkBack) {
+                        if (compareTitles.includes(this.search)) {
+                            newTitles.push(title);
+                        }
+                    }
+                    else {
+                        newTitles.push(title);
+                    }
+                }
+            }
+            console.log(titles.length);
+            console.log(newTitles.length);
+            this.createGraph(this.search, newTitles);
+            this.loading = false;
+        });
+    }
+    compareArrays(arr1, arr2) {
+        let val = arr1.reduce((total, cur) => {
+            if (arr2.includes(cur)) {
+                return total + 1;
+            }
+            else {
+                return total;
+            }
+        }, 0);
+        return val / arr1.length;
+    }
+    createGraph(topic, titles) {
+        let G = new jsnetworkx__WEBPACK_IMPORTED_MODULE_3__["Graph"]();
+        G.addNode(topic);
+        for (let title of titles) {
+            G.addEdgesFrom([[title, this.search], [this.search, title]]);
+        }
+        jsnetworkx__WEBPACK_IMPORTED_MODULE_3__["draw"](G, {
+            element: '#canvas',
+            weighted: true,
+            withLabels: true,
+            nodeStyle: {
+                stroke: 'none',
+                fill: '#448AFF',
+                r: 20
+            },
+            labelStyle: {
+                'font-size': '10px'
+            },
+            edgeStyle: {
+                fill: '#999'
+            }
+        });
+    }
+};
+ConceptMapPageComponent.ctorParameters = () => [
+    { type: src_app_services_http_http_service__WEBPACK_IMPORTED_MODULE_2__["HttpService"] }
+];
+ConceptMapPageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'concept-map-page',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./concept-map-page.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/concept-map-page/concept-map-page.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./concept-map-page.component.scss */ "./src/app/components/concept-map-page/concept-map-page.component.scss")).default]
+    })
+], ConceptMapPageComponent);
 
 
 
@@ -557,6 +723,7 @@ class Project {
 let HomePageComponent = class HomePageComponent {
     constructor(dialog) {
         this.dialog = dialog;
+        this.mindMap = `We wanted to create a visual representation of connected topics.  We used Wikipedia's API in a recursion algorithm to retrieve content and links to connect topics together.  A demo can be found <a href="/mind-map" target="_blank">here</a>.`;
         this.weschedule = `We wanted to automate the scheduling process of varsity sport team practises to allow more time playing and less time scheduling.  WeSchedule is an online platform that allows admins and schedules to create weekly schedules with a click of a button taking into account courts, hours of availability, and each individual players' availability.  We have already completed 5+ sprints and 200+ features and bug fixes deployed.`;
         this.signIt = `We wanted to empower people through the ability of speech by creating an app that translates sign language to English.  Sign it translates sign language to English in real time using machine learning and Open CV to track hand movement and identify different signed words and letters.
   
@@ -671,6 +838,7 @@ In the team event, the joint male/female Canadian squad finished 8th.  Canada fi
 <a href="https://youtu.be/6T0YGMvV4g4" target="_blank">Ravi Seth vs Joseph Williams England - Full Match</a>`;
         this.sideProjects = [
             new Project("WeSchedule", "University of Waterloo", "Sept. 13 2018 - present", "../../assets/sideProjects/weschedule.png", this.weschedule),
+            new Project("Mind Map", "University of Waterloo", "June 13 2020 - present", "../../assets/sideProjects/mind-map.png", this.mindMap),
             new Project("Sign It", "Hack the North", "Sept. 13 2019", "../../assets/sideProjects/signit.png", this.signIt),
             new Project("Red Eye", "PennApps Hackathon", "Sept. 6 2019", "../../assets/sideProjects/redeye-withme.png", this.redeye),
             new Project("Recyclops", "UWEnergyHacks", "June 1 2019", "../../assets/sideProjects/best-design.jpg", this.recyclops),
@@ -706,6 +874,94 @@ HomePageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./home-page.component.scss */ "./src/app/components/home-page/home-page.component.scss")).default]
     })
 ], HomePageComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/http/http.service.ts":
+/*!***********************************************!*\
+  !*** ./src/app/services/http/http.service.ts ***!
+  \***********************************************/
+/*! exports provided: HttpService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HttpService", function() { return HttpService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
+
+
+
+
+
+let HttpService = class HttpService {
+    constructor(http) {
+        this.http = http;
+    }
+    addObservableErrorHandling(ob, defaultValue = []) {
+        return ob.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(err => {
+            console.log(err);
+            return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(defaultValue);
+        }));
+    }
+    getWikiAPI(search) {
+        let baseURL = `https://en.wikipedia.org/w/api.php?`;
+        let params = {
+            origin: "*",
+            action: "query",
+            format: "json",
+            titles: search,
+            prop: "links",
+            pllimit: "max"
+        };
+        let url = this.formulateURL(baseURL, params);
+        let ob = this.http.get(url);
+        ob = this.addObservableErrorHandling(ob, null).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(result => {
+            if (result) {
+                return this.getTitles(result);
+            }
+            return [];
+        }));
+        return ob;
+    }
+    formulateURL(baseURL, params) {
+        let newURL = baseURL;
+        Object.keys(params).forEach(function (key) { newURL += "&" + key + "=" + params[key]; });
+        return newURL;
+    }
+    getTitles(response) {
+        if (!response.query || !response.query.pages) {
+            return [];
+        }
+        const titles = [];
+        const pages = response.query.pages;
+        for (const p in pages) {
+            let links = pages[p].links;
+            if (links) {
+                links.forEach(l => {
+                    const title = l.title;
+                    if (!title.includes(":")) {
+                        titles.push(title);
+                    }
+                });
+            }
+        }
+        return titles;
+    }
+};
+HttpService.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+];
+HttpService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], HttpService);
 
 
 

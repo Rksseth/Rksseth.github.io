@@ -56,6 +56,26 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/components/concept-map-page/concept-map-page.component.html":
+  /*!*******************************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/concept-map-page/concept-map-page.component.html ***!
+    \*******************************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppComponentsConceptMapPageConceptMapPageComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<div class=\"outer\">\n    <mat-toolbar class=\"mat-elevation-z8\">\n        <mat-form-field>\n            <input matInput autocomplete=\"off\" placeholder=\"Search\" [(ngModel)]=\"search\" [disabled]=\"loading\">\n        </mat-form-field>\n        <button mat-mini-fab (click)=\"completeSearch()\" [disabled]=\"loading\">\n            <mat-spinner *ngIf=\"loading; else notLoading\" [diameter]=\"25\"></mat-spinner>\n            \n            <ng-template #notLoading>\n                <mat-icon matPrefix>search</mat-icon>\n            </ng-template>\n        </button>\n        <div class=\"form-options\">\n            <h2>Links link back to search</h2>\n            <mat-checkbox labelPosition=\"before\" [disabled]=\"loading\" [(ngModel)]=\"linksLinkBack\"></mat-checkbox>\n        </div>\n        <div class=\"form-options\">\n            <h2>Minimum Percent Match</h2>\n            <mat-slider\n                [disabled]=\"loading\"\n                max=\"0.5\"\n                min=\"0\"\n                step=\"0.1\"\n                [thumbLabel]=\"true\"\n                [(ngModel)]=\"minPercentMatch\">\n            </mat-slider>\n        </div>\n    </mat-toolbar>\n    <div id=\"canvas\" class=\"mat-elevation-z8\">\n\n    </div>\n</div>";
+    /***/
+  },
+
+  /***/
   "./node_modules/raw-loader/dist/cjs.js!./src/app/components/content-popup/content-popup.component.html":
   /*!*************************************************************************************************************!*\
     !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/content-popup/content-popup.component.html ***!
@@ -861,82 +881,414 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _angular_material_slider__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    var _angular_common_http__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! @angular/common/http */
+    "./node_modules/@angular/common/fesm2015/http.js");
+    /* harmony import */
+
+
+    var _angular_material_slider__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
     /*! @angular/material/slider */
     "./node_modules/@angular/material/esm2015/slider.js");
     /* harmony import */
 
 
-    var _angular_material_card__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    var _angular_material_card__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
     /*! @angular/material/card */
     "./node_modules/@angular/material/esm2015/card.js");
     /* harmony import */
 
 
-    var _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+    var _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
     /*! @angular/material/sidenav */
     "./node_modules/@angular/material/esm2015/sidenav.js");
     /* harmony import */
 
 
-    var _angular_material_button__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+    var _angular_material_button__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
     /*! @angular/material/button */
     "./node_modules/@angular/material/esm2015/button.js");
     /* harmony import */
 
 
-    var _angular_material_divider__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+    var _angular_material_divider__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
     /*! @angular/material/divider */
     "./node_modules/@angular/material/esm2015/divider.js");
     /* harmony import */
 
 
-    var _angular_material_core__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
+    var _angular_material_core__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
     /*! @angular/material/core */
     "./node_modules/@angular/material/esm2015/core.js");
     /* harmony import */
 
 
-    var _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
+    var _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
     /*! @angular/material/toolbar */
     "./node_modules/@angular/material/esm2015/toolbar.js");
     /* harmony import */
 
 
-    var _angular_material_icon__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
+    var _angular_material_icon__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
     /*! @angular/material/icon */
     "./node_modules/@angular/material/esm2015/icon.js");
     /* harmony import */
 
 
-    var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
+    var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
     /*! @angular/material/dialog */
     "./node_modules/@angular/material/esm2015/dialog.js");
     /* harmony import */
 
 
-    var _components_home_page_home_page_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
+    var _angular_material_form_field__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
+    /*! @angular/material/form-field */
+    "./node_modules/@angular/material/esm2015/form-field.js");
+    /* harmony import */
+
+
+    var _angular_material_input__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
+    /*! @angular/material/input */
+    "./node_modules/@angular/material/esm2015/input.js");
+    /* harmony import */
+
+
+    var _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
+    /*! @angular/material/progress-spinner */
+    "./node_modules/@angular/material/esm2015/progress-spinner.js");
+    /* harmony import */
+
+
+    var _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
+    /*! @angular/material/checkbox */
+    "./node_modules/@angular/material/esm2015/checkbox.js");
+    /* harmony import */
+
+
+    var _angular_forms__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(
+    /*! @angular/forms */
+    "./node_modules/@angular/forms/fesm2015/forms.js");
+    /* harmony import */
+
+
+    var _components_home_page_home_page_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(
     /*! ./components/home-page/home-page.component */
     "./src/app/components/home-page/home-page.component.ts");
     /* harmony import */
 
 
-    var _components_content_popup_content_popup_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
+    var _components_content_popup_content_popup_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(
     /*! ./components/content-popup/content-popup.component */
-    "./src/app/components/content-popup/content-popup.component.ts"); // MATERIAL COMPONENTS
+    "./src/app/components/content-popup/content-popup.component.ts");
+    /* harmony import */
 
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _components_concept_map_page_concept_map_page_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(
+    /*! ./components/concept-map-page/concept-map-page.component */
+    "./src/app/components/concept-map-page/concept-map-page.component.ts");
+    /* harmony import */
+
+
+    var _services_http_http_service__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(
+    /*! ./services/http/http.service */
+    "./src/app/services/http/http.service.ts"); // MATERIAL COMPONENTS
+
+
+    var appRoutes = [{
+      path: '',
+      component: _components_home_page_home_page_component__WEBPACK_IMPORTED_MODULE_22__["HomePageComponent"]
+    }, {
+      path: 'mind-map',
+      component: _components_concept_map_page_concept_map_page_component__WEBPACK_IMPORTED_MODULE_25__["ConceptMapPageComponent"]
+    }];
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
     };
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _components_home_page_home_page_component__WEBPACK_IMPORTED_MODULE_16__["HomePageComponent"], _components_content_popup_content_popup_component__WEBPACK_IMPORTED_MODULE_17__["ContentPopupComponent"]],
-      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_6__["BrowserAnimationsModule"], _angular_material_slider__WEBPACK_IMPORTED_MODULE_7__["MatSliderModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_8__["MatCardModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_9__["MatSidenavModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_10__["MatButtonModule"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_11__["MatDividerModule"], _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_5__["FontAwesomeModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_12__["MatRippleModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_13__["MatToolbarModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_15__["MatDialogModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_14__["MatIconModule"]],
-      providers: [],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _components_home_page_home_page_component__WEBPACK_IMPORTED_MODULE_22__["HomePageComponent"], _components_content_popup_content_popup_component__WEBPACK_IMPORTED_MODULE_23__["ContentPopupComponent"], _components_concept_map_page_concept_map_page_component__WEBPACK_IMPORTED_MODULE_25__["ConceptMapPageComponent"]],
+      imports: [_angular_router__WEBPACK_IMPORTED_MODULE_24__["RouterModule"].forRoot(appRoutes), _angular_common_http__WEBPACK_IMPORTED_MODULE_7__["HttpClientModule"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_6__["BrowserAnimationsModule"], _angular_material_slider__WEBPACK_IMPORTED_MODULE_8__["MatSliderModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_9__["MatCardModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_10__["MatSidenavModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_11__["MatButtonModule"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_12__["MatDividerModule"], _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_5__["FontAwesomeModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_13__["MatRippleModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_14__["MatToolbarModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_16__["MatDialogModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_18__["MatInputModule"], _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_20__["MatCheckboxModule"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_17__["MatFormFieldModule"], _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_19__["MatProgressSpinnerModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_15__["MatIconModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_21__["FormsModule"]],
+      providers: [_services_http_http_service__WEBPACK_IMPORTED_MODULE_26__["HttpService"]],
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]],
-      entryComponents: [_components_content_popup_content_popup_component__WEBPACK_IMPORTED_MODULE_17__["ContentPopupComponent"]]
+      entryComponents: [_components_content_popup_content_popup_component__WEBPACK_IMPORTED_MODULE_23__["ContentPopupComponent"]]
     })], AppModule);
+    /***/
+  },
+
+  /***/
+  "./src/app/components/concept-map-page/concept-map-page.component.scss":
+  /*!*****************************************************************************!*\
+    !*** ./src/app/components/concept-map-page/concept-map-page.component.scss ***!
+    \*****************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppComponentsConceptMapPageConceptMapPageComponentScss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = ".outer {\n  position: relative;\n  top: 0;\n  right: 0;\n  left: 0;\n  bottom: 0;\n  overflow: hidden;\n  height: 100%;\n  padding: auto;\n  vertical-align: middle;\n}\n\n#canvas {\n  height: 500px;\n  width: 500px;\n  border-radius: 50%;\n  background-color: lightgrey;\n  overflow: hidden;\n  margin: auto;\n  margin-top: 10px;\n}\n\n.mat-toolbar {\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n  -webkit-box-pack: justify;\n          justify-content: space-between;\n  margin: 2%;\n  width: 96%;\n  display: -webkit-box;\n  display: flex;\n  flex-wrap: wrap;\n  background-color: white;\n  border-radius: 1em;\n}\n\n.form-options {\n  text-align: center;\n  margin: auto 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9yYXZpc2V0aC9EZXNrdG9wL0FuZ3VsYXJNYXRlcmlhbFBlcnNvbmFsV2Vic2l0ZS9zcmMvYXBwL2NvbXBvbmVudHMvY29uY2VwdC1tYXAtcGFnZS9jb25jZXB0LW1hcC1wYWdlLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9jb21wb25lbnRzL2NvbmNlcHQtbWFwLXBhZ2UvY29uY2VwdC1tYXAtcGFnZS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGtCQUFBO0VBQ0EsTUFBQTtFQUNBLFFBQUE7RUFDQSxPQUFBO0VBQ0EsU0FBQTtFQUNBLGdCQUFBO0VBQ0EsWUFBQTtFQUNBLGFBQUE7RUFDQSxzQkFBQTtBQ0NKOztBRENBO0VBQ0ksYUFBQTtFQUNBLFlBQUE7RUFDQSxrQkFBQTtFQUNBLDJCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxZQUFBO0VBQ0EsZ0JBQUE7QUNFSjs7QURBQTtFQUNJLDJCQUFBO0VBQUEsd0JBQUE7RUFBQSxtQkFBQTtFQUNBLHlCQUFBO1VBQUEsOEJBQUE7RUFDQSxVQUFBO0VBQ0EsVUFBQTtFQUNBLG9CQUFBO0VBQUEsYUFBQTtFQUNBLGVBQUE7RUFDQSx1QkFBQTtFQUNBLGtCQUFBO0FDR0o7O0FEREE7RUFDSSxrQkFBQTtFQUNBLGlCQUFBO0FDSUoiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL2NvbmNlcHQtbWFwLXBhZ2UvY29uY2VwdC1tYXAtcGFnZS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5vdXRlciB7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgIHRvcDogMDtcbiAgICByaWdodDogMDtcbiAgICBsZWZ0OiAwO1xuICAgIGJvdHRvbTogMDtcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuICAgIGhlaWdodDogMTAwJTtcbiAgICBwYWRkaW5nOiBhdXRvO1xuICAgIHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7XG59XG4jY2FudmFzIHtcbiAgICBoZWlnaHQ6IDUwMHB4O1xuICAgIHdpZHRoOiA1MDBweDtcbiAgICBib3JkZXItcmFkaXVzOiA1MCU7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogbGlnaHRncmV5O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG4gICAgbWFyZ2luOiBhdXRvO1xuICAgIG1hcmdpbi10b3A6IDEwcHg7XG59XG4ubWF0LXRvb2xiYXIge1xuICAgIGhlaWdodDogZml0LWNvbnRlbnQ7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIG1hcmdpbjogMiU7XG4gICAgd2lkdGg6IDk2JTtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtd3JhcDogd3JhcDtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBib3JkZXItcmFkaXVzOiAxZW07XG59XG4uZm9ybS1vcHRpb25zIHtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgbWFyZ2luOiBhdXRvIDEwcHg7XG59IiwiLm91dGVyIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICB0b3A6IDA7XG4gIHJpZ2h0OiAwO1xuICBsZWZ0OiAwO1xuICBib3R0b206IDA7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGhlaWdodDogMTAwJTtcbiAgcGFkZGluZzogYXV0bztcbiAgdmVydGljYWwtYWxpZ246IG1pZGRsZTtcbn1cblxuI2NhbnZhcyB7XG4gIGhlaWdodDogNTAwcHg7XG4gIHdpZHRoOiA1MDBweDtcbiAgYm9yZGVyLXJhZGl1czogNTAlO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiBsaWdodGdyZXk7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIG1hcmdpbjogYXV0bztcbiAgbWFyZ2luLXRvcDogMTBweDtcbn1cblxuLm1hdC10b29sYmFyIHtcbiAgaGVpZ2h0OiBmaXQtY29udGVudDtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICBtYXJnaW46IDIlO1xuICB3aWR0aDogOTYlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LXdyYXA6IHdyYXA7XG4gIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICBib3JkZXItcmFkaXVzOiAxZW07XG59XG5cbi5mb3JtLW9wdGlvbnMge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIG1hcmdpbjogYXV0byAxMHB4O1xufSJdfQ== */";
+    /***/
+  },
+
+  /***/
+  "./src/app/components/concept-map-page/concept-map-page.component.ts":
+  /*!***************************************************************************!*\
+    !*** ./src/app/components/concept-map-page/concept-map-page.component.ts ***!
+    \***************************************************************************/
+
+  /*! exports provided: ConceptMapPageComponent */
+
+  /***/
+  function srcAppComponentsConceptMapPageConceptMapPageComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "ConceptMapPageComponent", function () {
+      return ConceptMapPageComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var src_app_services_http_http_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! src/app/services/http/http.service */
+    "./src/app/services/http/http.service.ts");
+    /* harmony import */
+
+
+    var jsnetworkx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! jsnetworkx */
+    "./node_modules/jsnetworkx/node/index.js");
+    /* harmony import */
+
+
+    var jsnetworkx__WEBPACK_IMPORTED_MODULE_3___default =
+    /*#__PURE__*/
+    __webpack_require__.n(jsnetworkx__WEBPACK_IMPORTED_MODULE_3__);
+
+    var ConceptMapPageComponent =
+    /*#__PURE__*/
+    function () {
+      function ConceptMapPageComponent(httpService) {
+        _classCallCheck(this, ConceptMapPageComponent);
+
+        this.httpService = httpService;
+        this.search = "web developer";
+        this.minPercentMatch = 0.1;
+        this.loading = false;
+      }
+
+      _createClass(ConceptMapPageComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          this.completeSearch();
+        }
+      }, {
+        key: "completeSearch",
+        value: function completeSearch() {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee() {
+            var titles, newTitles, _iteratorNormalCompletion, _didIteratorError, _iteratorError, _iterator, _step, title, compareTitles, comp;
+
+            return regeneratorRuntime.wrap(function _callee$(_context) {
+              while (1) {
+                switch (_context.prev = _context.next) {
+                  case 0:
+                    this.loading = true;
+                    _context.next = 3;
+                    return this.httpService.getWikiAPI(this.search).toPromise();
+
+                  case 3:
+                    titles = _context.sent;
+                    newTitles = [];
+                    _iteratorNormalCompletion = true;
+                    _didIteratorError = false;
+                    _iteratorError = undefined;
+                    _context.prev = 8;
+                    _iterator = titles[Symbol.iterator]();
+
+                  case 10:
+                    if (_iteratorNormalCompletion = (_step = _iterator.next()).done) {
+                      _context.next = 20;
+                      break;
+                    }
+
+                    title = _step.value;
+                    _context.next = 14;
+                    return this.httpService.getWikiAPI(title).toPromise();
+
+                  case 14:
+                    compareTitles = _context.sent;
+                    comp = this.compareArrays(titles, compareTitles);
+
+                    if (comp >= this.minPercentMatch) {
+                      if (this.linksLinkBack) {
+                        if (compareTitles.includes(this.search)) {
+                          newTitles.push(title);
+                        }
+                      } else {
+                        newTitles.push(title);
+                      }
+                    }
+
+                  case 17:
+                    _iteratorNormalCompletion = true;
+                    _context.next = 10;
+                    break;
+
+                  case 20:
+                    _context.next = 26;
+                    break;
+
+                  case 22:
+                    _context.prev = 22;
+                    _context.t0 = _context["catch"](8);
+                    _didIteratorError = true;
+                    _iteratorError = _context.t0;
+
+                  case 26:
+                    _context.prev = 26;
+                    _context.prev = 27;
+
+                    if (!_iteratorNormalCompletion && _iterator.return != null) {
+                      _iterator.return();
+                    }
+
+                  case 29:
+                    _context.prev = 29;
+
+                    if (!_didIteratorError) {
+                      _context.next = 32;
+                      break;
+                    }
+
+                    throw _iteratorError;
+
+                  case 32:
+                    return _context.finish(29);
+
+                  case 33:
+                    return _context.finish(26);
+
+                  case 34:
+                    console.log(titles.length);
+                    console.log(newTitles.length);
+                    this.createGraph(this.search, newTitles);
+                    this.loading = false;
+
+                  case 38:
+                  case "end":
+                    return _context.stop();
+                }
+              }
+            }, _callee, this, [[8, 22, 26, 34], [27,, 29, 33]]);
+          }));
+        }
+      }, {
+        key: "compareArrays",
+        value: function compareArrays(arr1, arr2) {
+          var val = arr1.reduce(function (total, cur) {
+            if (arr2.includes(cur)) {
+              return total + 1;
+            } else {
+              return total;
+            }
+          }, 0);
+          return val / arr1.length;
+        }
+      }, {
+        key: "createGraph",
+        value: function createGraph(topic, titles) {
+          var G = new jsnetworkx__WEBPACK_IMPORTED_MODULE_3__["Graph"]();
+          G.addNode(topic);
+          var _iteratorNormalCompletion2 = true;
+          var _didIteratorError2 = false;
+          var _iteratorError2 = undefined;
+
+          try {
+            for (var _iterator2 = titles[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+              var title = _step2.value;
+              G.addEdgesFrom([[title, this.search], [this.search, title]]);
+            }
+          } catch (err) {
+            _didIteratorError2 = true;
+            _iteratorError2 = err;
+          } finally {
+            try {
+              if (!_iteratorNormalCompletion2 && _iterator2.return != null) {
+                _iterator2.return();
+              }
+            } finally {
+              if (_didIteratorError2) {
+                throw _iteratorError2;
+              }
+            }
+          }
+
+          jsnetworkx__WEBPACK_IMPORTED_MODULE_3__["draw"](G, {
+            element: '#canvas',
+            weighted: true,
+            withLabels: true,
+            nodeStyle: {
+              stroke: 'none',
+              fill: '#448AFF',
+              r: 20
+            },
+            labelStyle: {
+              'font-size': '10px'
+            },
+            edgeStyle: {
+              fill: '#999'
+            }
+          });
+        }
+      }]);
+
+      return ConceptMapPageComponent;
+    }();
+
+    ConceptMapPageComponent.ctorParameters = function () {
+      return [{
+        type: src_app_services_http_http_service__WEBPACK_IMPORTED_MODULE_2__["HttpService"]
+      }];
+    };
+
+    ConceptMapPageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'concept-map-page',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./concept-map-page.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/components/concept-map-page/concept-map-page.component.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./concept-map-page.component.scss */
+      "./src/app/components/concept-map-page/concept-map-page.component.scss")).default]
+    })], ConceptMapPageComponent);
     /***/
   },
 
@@ -1127,6 +1479,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         _classCallCheck(this, HomePageComponent);
 
         this.dialog = dialog;
+        this.mindMap = "We wanted to create a visual representation of connected topics.  We used Wikipedia's API in a recursion algorithm to retrieve content and links to connect topics together.  A demo can be found <a href=\"/mind-map\" target=\"_blank\">here</a>.";
         this.weschedule = "We wanted to automate the scheduling process of varsity sport team practises to allow more time playing and less time scheduling.  WeSchedule is an online platform that allows admins and schedules to create weekly schedules with a click of a button taking into account courts, hours of availability, and each individual players' availability.  We have already completed 5+ sprints and 200+ features and bug fixes deployed.";
         this.signIt = "We wanted to empower people through the ability of speech by creating an app that translates sign language to English.  Sign it translates sign language to English in real time using machine learning and Open CV to track hand movement and identify different signed words and letters.\n  \nWe used Open CV to track the hand movement and machine learning in order to identify the different signs used for different letters.  After identifying the signed letter, we stored the signed letters to form full sentences. Using Azure, we trained the data set to work on various hands and environments.\n\nMade with &hearts; and Python, OpenCV, TensorFlow, Azure Custom Vision Service";
         this.redeye = "Life travels fast, and car crashes can happen in the blink of an eye, but with our companion, Red Eye, we can prevent this.  Long and tedious drives can increase the risk of falling asleep at the wheel and medical emergencies don\u2019t wait until you\u2019re out of the car. This Android app is designed to create a more positive, seamless driving experience by helping drivers when they are tired or in the event that they have a medical emergency while behind the wheel.\n   \nThe app uses face detection to track and analyze the driver\u2019s face, identifying if they have fallen asleep or have experienced a medical emergency through their eyes (whether they are opened or closed). The app then suggests a course of action: find the nearest hotel or alert the authorities. If the former is chosen, a list of nearby hotels will appear on screen, if the latter is chosen, the authorities will be alerted and given the exact coordinates by accessing the phone\u2019s location.\n\nMade with &hearts; and Java, Android, Google's Cloud Vision API, and Google Translate API";
@@ -1136,7 +1489,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         this.worlds2016 = "Team Canada\u2019s world junior men\u2019s team was rounded out May 20-22 in Winnipeg (MB) when the Winnipeg Squash Racquet Club hosted Squash Canada\u2019s World Junior Men\u2019s Team trials. \n\nUnderdog Ravi Seth from Elora, Ontario won the World Junior Men\u2019s Team trials to capture a spot on Team Canada for Poland this summer.  Unseeded Ravi won his two pool matches 3-0 to set up a final match against top seed Matt Henderson from Victoria, BC.\n  \nAlthough leading in each of the first two games, Seth lost both and went 2-0 down to Henderson.  Seth then went on an incredible run to win 33 of the next 40 points, taking the next two games to level the match at 2 games all, and then to win the 5th comfortably 11-3.\n  \nTeam trials results can be viewed <a href=\"../../assets/athletics/trials.pdf\" target=\"_blank\" title=\"trials results\">here</a>.\n  \nRavi Seth follows in his brother Cameron\u2019s footsteps who made the Junior World Team back in 2012.\n  \nHenderson earned his spot on count back; he and Seth join 2016 Canadian U19 Men\u2019s Champion Mike Mehl (AB) and Rahul Sehrawat (ON) to make the 4-person Team Canada squad.  Mehl and Sehrawat qualified for the team as points leaders accumulated in 3 (of a possible 4) selection events over each of the last two seasons.\n  \nTeam Canada will compete at this summer\u2019s WSF World Junior Squash Championships being held in Bielsko-Bia\u0142a, Poland from August 6-17.";
         this.cwg2015 = "Young athletes from across the country are packing their bags, ready to take off on the trip of a lifetime this weekend to compete in the 2015 Canada Winter Games in Prince George, BC.\n\nThe Canada Games kicked off February 13th with an exciting Opening Ceremony at the CN Centre in Prince George, and is wrapping up competition in 12 sports as part of Week 1. Squash joins 10 other sports as Week 2 competition kicks off Sunday.\n  \nSquash is proud to have increased participation from the 2011 edition of the Games, hosted in Halifax, as 12 Provinces and Territories will be competing in Prince George. Also new to this year\u2019s event is an Individual Competition, featuring a draw of 16 each for boys and girls.\n  \n\u201CWe\u2019re very happy that all of our member Provinces and Territories will be a part of this year\u2019s Canada Games\u201D, says Danny Da Costa, Squash Canada Executive Director. \u201CThe inclusion of the Individual Competition is also a very exciting aspect, as it will give more Provinces and Territories a shot at the podium while showcasing some excellent squash.\u201D\n  \nThe Individual draws begin Sunday evening, with the Team competition starting on Monday and continuing through next Saturday.\n  \nThe Canada Winter Games is held every two years, alternating between Summer and Winter Games. A collaboration of youth, sport, culture and community, the Canada Games is Canada\u2019s largest multi-sport competition for young athletes. First held in 1967 in Quebec City, Canada Games showcases our country\u2019s next generation of national, international, and Olympic Champions.\n  \n<a href=\"https://youtu.be/yvp5qkxOCb0\" target=\"_blank\">Men's Squash Final - Ontario vs Alberta</a>";
         this.uniworlds = "The 2018 World University Squash Championships concluded on September 12th.  Five Canadians stepped up to play for Canada! From September 6th-12th, student athletes from around the world skipped some school, converging in Birmingham for a week of intense squash competition! This year, 56 male and 28 female players from a record 21 countries participated in the tournament.\n\nIn the team event, the joint male/female Canadian squad finished 8th.  Canada finsihed 2nd in Pool play, winning 2-1 versus Switzerland and suffered a 3-0 loss to evenual finalsit, Malaysia.  The next two matches were narrow 2-1 losses to Czech Republic and Australia.\n  \n<a href=\"https://youtu.be/6T0YGMvV4g4\" target=\"_blank\">Ravi Seth vs Joseph Williams England - Full Match</a>";
-        this.sideProjects = [new Project("WeSchedule", "University of Waterloo", "Sept. 13 2018 - present", "../../assets/sideProjects/weschedule.png", this.weschedule), new Project("Sign It", "Hack the North", "Sept. 13 2019", "../../assets/sideProjects/signit.png", this.signIt), new Project("Red Eye", "PennApps Hackathon", "Sept. 6 2019", "../../assets/sideProjects/redeye-withme.png", this.redeye), new Project("Recyclops", "UWEnergyHacks", "June 1 2019", "../../assets/sideProjects/best-design.jpg", this.recyclops), new Project("Textris", "Published on iOS App Store", "Apr. 24 2018", "../../assets/sideProjects/textris.png", this.textris)];
+        this.sideProjects = [new Project("WeSchedule", "University of Waterloo", "Sept. 13 2018 - present", "../../assets/sideProjects/weschedule.png", this.weschedule), new Project("Mind Map", "University of Waterloo", "June 13 2020 - present", "../../assets/sideProjects/mind-map.png", this.mindMap), new Project("Sign It", "Hack the North", "Sept. 13 2019", "../../assets/sideProjects/signit.png", this.signIt), new Project("Red Eye", "PennApps Hackathon", "Sept. 6 2019", "../../assets/sideProjects/redeye-withme.png", this.redeye), new Project("Recyclops", "UWEnergyHacks", "June 1 2019", "../../assets/sideProjects/best-design.jpg", this.recyclops), new Project("Textris", "Published on iOS App Store", "Apr. 24 2018", "../../assets/sideProjects/textris.png", this.textris)];
         this.athletics = [new Project("Squash Team Canada", "World Universities, England", "Sept. 6 2018", "../../assets/athletics/uniworlds.png", this.uniworlds), new Project("UW Varsity Squash Team", "OUA's Squash Championships", "Feb. 12 2018", "../../assets/athletics/oua2018.JPG", this.ouas), new Project("Squash Team Canada", "World Juniors, Poland", "Aug. 7 2016", "../../assets/athletics/worlds2016.jpg", this.worlds2016), new Project("Squash Team Ontario", "Canada Winter Gamces, BC", "Feb. 21 2015", "../../assets/athletics/cwg2015.jpeg", this.cwg2015)];
       }
 
@@ -1174,6 +1527,151 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       /*! ./home-page.component.scss */
       "./src/app/components/home-page/home-page.component.scss")).default]
     })], HomePageComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/services/http/http.service.ts":
+  /*!***********************************************!*\
+    !*** ./src/app/services/http/http.service.ts ***!
+    \***********************************************/
+
+  /*! exports provided: HttpService */
+
+  /***/
+  function srcAppServicesHttpHttpServiceTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "HttpService", function () {
+      return HttpService;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/common/http */
+    "./node_modules/@angular/common/fesm2015/http.js");
+    /* harmony import */
+
+
+    var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! rxjs */
+    "./node_modules/rxjs/_esm2015/index.js");
+    /* harmony import */
+
+
+    var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! rxjs/operators */
+    "./node_modules/rxjs/_esm2015/operators/index.js");
+
+    var HttpService =
+    /*#__PURE__*/
+    function () {
+      function HttpService(http) {
+        _classCallCheck(this, HttpService);
+
+        this.http = http;
+      }
+
+      _createClass(HttpService, [{
+        key: "addObservableErrorHandling",
+        value: function addObservableErrorHandling(ob) {
+          var defaultValue = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
+          return ob.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(function (err) {
+            console.log(err);
+            return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(defaultValue);
+          }));
+        }
+      }, {
+        key: "getWikiAPI",
+        value: function getWikiAPI(search) {
+          var _this = this;
+
+          var baseURL = "https://en.wikipedia.org/w/api.php?";
+          var params = {
+            origin: "*",
+            action: "query",
+            format: "json",
+            titles: search,
+            prop: "links",
+            pllimit: "max"
+          };
+          var url = this.formulateURL(baseURL, params);
+          var ob = this.http.get(url);
+          ob = this.addObservableErrorHandling(ob, null).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (result) {
+            if (result) {
+              return _this.getTitles(result);
+            }
+
+            return [];
+          }));
+          return ob;
+        }
+      }, {
+        key: "formulateURL",
+        value: function formulateURL(baseURL, params) {
+          var newURL = baseURL;
+          Object.keys(params).forEach(function (key) {
+            newURL += "&" + key + "=" + params[key];
+          });
+          return newURL;
+        }
+      }, {
+        key: "getTitles",
+        value: function getTitles(response) {
+          if (!response.query || !response.query.pages) {
+            return [];
+          }
+
+          var titles = [];
+          var pages = response.query.pages;
+
+          for (var p in pages) {
+            var links = pages[p].links;
+
+            if (links) {
+              links.forEach(function (l) {
+                var title = l.title;
+
+                if (!title.includes(":")) {
+                  titles.push(title);
+                }
+              });
+            }
+          }
+
+          return titles;
+        }
+      }]);
+
+      return HttpService;
+    }();
+
+    HttpService.ctorParameters = function () {
+      return [{
+        type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]
+      }];
+    };
+
+    HttpService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+      providedIn: 'root'
+    })], HttpService);
     /***/
   },
 
